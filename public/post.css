@@ -1,0 +1,73 @@
+/* Main Post Container */
+.blog-post {
+    background-color: var(--post-bg);
+    border: 1px dotted var(--pastel-purple);
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: background-color 0.2s ease-in-out;
+}
+.blog-post:hover {
+    background-color: var(--hover-bg); 
+}
+
+/* Post Title */
+.post-title {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+.post-title a {
+    color: var(--deep-indigo);
+    text-decoration: none;
+}
+.post-title a:hover {
+    color: var(--neon-magenta);
+    text-decoration: underline;
+}
+
+/* Post Metadata (Date, Category, etc.) */
+.post-meta {
+    font-size: 11px;
+    margin-bottom: 20px;
+    color: var(--pastel-purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Featured Image (for the "with image" variation) */
+.post-image {
+    margin-bottom: 20px;
+}
+.post-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--pastel-purple);
+}
+
+/* Main Content Area */
+.post-content {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--deep-indigo);
+}
+.post-content p {
+    margin: 0 0 1em 0;
+}
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* "Read More" Link */
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: var(--pastel-purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+.read-more:hover {
+    color: var(--neon-magenta);
+    text-decoration: underline;
+}

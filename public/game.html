@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なおこのゲーム</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <script>
+        fetch('./profile.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML += data;
+            });
+    </script>
+</head>
+
+<body>
+
+    <table class="main-layout-table">
+        <tr>
+            <!-- ================================== -->
+            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
+            <!-- ================================== -->
+            <td class="sidebar" id="sidebar">
+                <div class="vertical-header">
+                    ゲームの記録
+                </div>
+            </td>
+
+            <!-- ================================== -->
+            <!--        MAIN CONTENT AREA           -->
+            <!-- ================================== -->
+            <td class="main-content">
+
+                <div class="page-title">
+                    <h1>Game Archive // ゲームアーカイブ</h1>
+                    <span>プレイ済みとプレイ中ゲームのリスト。</span>
+                </div>
+
+                <!-- ================================================================== -->
+                <!-- START: GAME ENTRY TEMPLATE                                         -->
+                <!-- ================================================================== -->
+                <template>
+                    <div class="game-entry">
+                        <div class="game-cover">
+                            <img src="" alt="game cover">
+                        </div>
+                        <div class="game-details">
+                            <h3 class="game-title"><a href="#">---</a></h3>
+                            <div class="game-meta">
+                                <span>// PLATFORM: STEAM</span>
+                                <span>// STATUS: <span class="status-completed">COMPLETED</span></span>
+                                <span>// RATING: -/10</span>
+                                <span>// DATE: --/--</span>
+                            </div>
+                            <p class="game-comment">
+                                ---
+                            </p>
+                        </div>
+                    </div>
+                </template>
+                <!-- ================================================================== -->
+                <!-- END: GAME ENTRY TEMPLATE                                           -->
+                <!-- ================================================================== -->
+
+                <!-- ================================= -->
+                <!--              PLAYING              -->
+                <!-- ================================= -->
+                <p class="end-of-list">// PLAYING</p>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/8/6/2/156862_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">キングダム ハーツ 3D ［ドリーム ドロップ ディスタンス］</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: 3DS</span>
+                            <span>// RATING: -/10</span>
+                            <span>// DATE: --/--</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/8/8/9/64889_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンゼロ4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: GBA</span>
+                            <span>// RATING: -/10</span>
+                            <span>// DATE: --/--</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/9/1/6/50916_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン7</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: SFC</span>
+                            <span>// RATING: -/10</span>
+                            <span>// DATE: --/--</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/9a0374c34b7f2fded837332db33cdf77.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode7</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: -/10</span>
+                            <span>// DATE: --/--</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <!-- =================================== -->
+                <!--              COMPLETED              -->
+                <!-- =================================== -->
+                <p class="end-of-list">// COMPLETED</p>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/3/6/91636_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">キングダム ハーツ バース バイ スリープ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PSP</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/07</span>
+                        </div>
+                        <p class="game-comment">
+                            ゲーム性もストーリーも良かったけど、最初のキャンペーンのセーブデータ消えちゃって、もう一回やるハメになった。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/0/4/55604_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">キングダム ハーツII</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/06</span>
+                        </div>
+                        <p class="game-comment">
+                            シリーズで一番ゲーム性が良かったと思う。ストーリーもなかなか良かった！
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/9/5/57495_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">キングダム ハーツ チェイン オブ メモリーズ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 6/10</span>
+                            <span>// DATE: 25/06</span>
+                        </div>
+                        <p class="game-comment">
+                            今作はゲーム性が変わってて、最初は楽しかったけど、後半はちょっとダレた。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/3/6/14136_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">キングダム ハーツ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ゲーム自体は面白いけど、ちょっと分かりづらいところもあって、クリアには攻略見ながらやった。でも楽しかった！
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/0/9/52009_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">悪魔城ドラキュラX 血の輪廻</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC-ENGINE</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/8/8/5088_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン8</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/8/9/3/673893_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン11</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/1/2/296612_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">悪魔城ドラキュラ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 6/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/4/4/22144_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン6</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/2/1/49421_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン5</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/2/9/22129_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/9/6/4/58964_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンゼロ3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: GBA</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/1/4/22114_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/9/5/22095_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/7/8/22078_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマン</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: FC</span>
+                            <span>// RATING: 5/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/1/4/52414_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンゼロ2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: GBA</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/7/9/16479_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンゼロ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: GBA</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/5/1/0/60510_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX8</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/5/6/4/18564_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX7</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 5/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/5/5/14055_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX6</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS</span>
+                            <span>// RATING: 4/10</span>
+                            <span>// DATE: 25/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/3880b651fac0e6a246c7f75319fc4c4a.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode6</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/5/1/8/10518_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX5</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/7/2/7/19727_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: SFC</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/684136b89e3982aaf7539b6b99641106.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode5</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/43f362aa1849db9185a239b298f7737b.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/2/1/20121_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: SFC</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/0/9/5109_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/0a1ad7eeca0e3db78bf79f31b6e1ddeb.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/9/2/2/50922_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ロックマンX2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: SFC</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/4090a196c63b7df74f2c7acf6821a9ef.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/eaf927f30fd898ba45e553621aa83224.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode1</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/2/1/3/1028213_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">モンスターハンターワイルズ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/7/7/648477_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">モンスターハンター：ワールド</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/02</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/9/7/1030697_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">メタファー:リファンタジオ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 25/01</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/7/1/5/960715_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ペルソナ3 リロード</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 24/12</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/3/0/6/719306_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ペルソナ5 ザ・ロイヤル</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 24/11</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/2/4/3/979243_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">Little Goody Two Shoes</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 24/10</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/2/0/8/634208_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">UNDERTALE</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 24/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/8/7/744687_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">悪魔城ドラキュラX 月下の夜想曲</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 23/08</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/9/4/734694_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード RE:3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 23/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/3/8/739038_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">デビルメイクライ3 Special Edition</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 23/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/7/4/5/717745_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">デビルメイクライ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 23/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/4/0/784140_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード ヴィレッジ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 7/10</span>
+                            <span>// DATE: 23/05</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/9/7/899497_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード RE:4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 23/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/3/0/13630_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">クロックタワー3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 23/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/8/9/8/875898_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード RE:2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 23/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/2/4/704624_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS2</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 23/02</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/4/6/6646_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PS</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 23/02</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/6/7/9/113679_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">メタルギア ライジング リベンジェンス</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 9/10</span>
+                            <span>// DATE: 21/12</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/1/0/8/793108_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">パンツァードラグーン：リメイク</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 21/12</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/0/5/1/614051_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">バイオハザード7 レジデント イービル</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                            <span>// RATING: 8/10</span>
+                            <span>// DATE: 17/02</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <p class="end-of-list">// END OF FILE</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なおこ </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="post.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <script>
+        fetch('./profile.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML += data;
+            });
+    </script>
+</head>
+
+<body>
+
+    <table class="main-layout-table">
+        <tr>
+            <!-- ================================== -->
+            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
+            <!-- ================================== -->
+            <td class="sidebar" id="sidebar">
+                <div class="vertical-header">
+                    なおこの日記
+                </div>
+            </td>
+
+            <!-- ================================== -->
+            <!--        MAIN CONTENT AREA           -->
+            <!-- ================================== -->
+            <td class="main-content">
+                <div class="page-title">
+                    <h1>My Diary // マイ日記</h1>
+                    <span>日々のこと、好きなもの、思ったこと。</span>
+                </div>
+                <article class="blog-post">
+                    <h2 class="post-title"><a href="#">コレクション紹介：PS編</a></h2>
+                    <div class="post-meta">
+                        // POSTED: 2025-07-04 // CATEGORY: GAMING //
+                    </div>
+
+                    <div class="post-image">
+                        <img src="images/posts/ps1_collection.png">
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            最近数年で集めた、好きなPS1ゲームのコレクションです。
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="blog-post">
+                    <h2 class="post-title"><a href="#">コレクション紹介：携帯機編</a></h2>
+                    <div class="post-meta">
+                        // POSTED: 2025-06-10 // CATEGORY: GAMING //
+                    </div>
+
+                    <div class="post-image">
+                        <img src="images/posts/portable_collection.png">
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            最初に買った携帯ゲーム機は3DSでした。そこからいろいろと集め始めました。
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="blog-post">
+                    <h2 class="post-title"><a href="#">ピンクのPSP</a></h2>
+                    <div class="post-meta">
+                        // POSTED: 2025-03-23 // CATEGORY: GAMING //
+                    </div>
+
+                    <div class="post-image">
+                        <img src="images/posts/pink_psp.png">
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            このピンクのPSPが大好きで、ずっと探していたけど、ついに手に入れました。
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="blog-post">
+                    <h2 class="post-title"><a href="#">ヴァンガードデッキ：大倉メグミ</a></h2>
+                    <div class="post-meta">
+                        // POSTED: 2024-09-05 // CATEGORY: CARD GAMES //
+                    </div>
+
+                    <div class="post-image">
+                        <img src="images/posts/vanguard_deck.png">
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            大倉メグミちゃんが大好きなので、新シーズンのヴァンガードデッキを買っちゃいました！
+                        </p>
+                    </div>
+                </article>
+                
+                <article class="blog-post">
+                    <h2 class="post-title"><a href="#">クラシック遊戯王カード</a></h2>
+                    <div class="post-meta">
+                        // POSTED: 2024-08-02 // CATEGORY: CARD GAMES //
+                    </div>
+
+                    <div class="post-image">
+                        <img src="images/posts/classic_yugioh.png">
+                    </div>
+
+                    <div class="post-content">
+                        <p>
+                            コナミが再販したクラシックな遊戯王カードセットを買いました。
+                        </p>
+                    </div>
+                </article>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
