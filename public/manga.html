@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なおこ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <script>
+        fetch('./profile.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML += data;
+            });
+    </script>
+</head>
+
+<body>
+
+    <table class="main-layout-table">
+        <tr>
+            <!-- ================================== -->
+            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
+            <!-- ================================== -->
+            <td class="sidebar" id="sidebar">
+                <div class="vertical-header">
+                    漫画
+                </div>
+            </td>
+
+            <!-- ================================== -->
+            <!--        MAIN CONTENT AREA           -->
+            <!-- ================================== -->
+            <td class="main-content">
+
+                <div class="page-title">
+                    <h1>Manga Archive // 漫画アーカイブ</h1>
+                    <span>読了済みと読書中の漫画のリスト。</span>
+                </div>
+
+                <!-- ================================== -->
+                <!--              WATCHING              -->
+                <!-- ================================== -->
+                <p class="end-of-list">// READING</p>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ベルセルク</a></h3>
+                        <div class="game-meta">
+                            <span>// CHAPTERS: 375/382+</span>
+                            <span>// RATING: 10/10</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <!-- =================================== -->
+                <!--              COMPLETED              -->
+                <!-- =================================== -->
+                <p class="end-of-list">// COMPLETED</p>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx44115-QcH1sTWNYTyg.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">プラナス・ガール</a></h3>
+                        <div class="game-meta">
+                            <span>// CHAPTERS: 43/43</span>
+                            <span>// RATING: 10/10</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <p class="end-of-list">// END OF FILE</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
