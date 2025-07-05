@@ -19,9 +19,6 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const mainContent = document.querySelector('.main-content');
-
-            const reading = mainContent.querySelectorAll('.reading');
-            document.querySelector('#reading').innerHTML += ": " + reading.length;
             
             const completed = mainContent.querySelectorAll('.completed');
             document.querySelector('#completed').innerHTML += ": " + completed.length;
@@ -38,7 +35,7 @@
             <!-- ================================== -->
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
-                    漫画
+                    ドラマ
                 </div>
             </td>
 
@@ -48,30 +45,8 @@
             <td class="main-content">
 
                 <div class="page-title">
-                    <h1>Manga Archive // 漫画アーカイブ</h1>
-                    <span>読了済みと読書中の漫画のリスト。</span>
-                </div>
-
-                <!-- ================================== -->
-                <!--              READING               -->
-                <!-- ================================== -->
-                <p class="end-of-list" id="reading">// READING</p>
-
-                <div class="game-entry reading">
-                    <div class="game-cover">
-                        <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">ベルセルク</a></h3>
-                        <div class="game-meta">
-                            <span>// CHAPTERS: 375/382+</span>
-                            <span>// RATING: 10/10</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
+                    <h1>Drama Archive // ドラマアーカイブ</h1>
+                    <span>視聴済みと視聴中のドラマのリスト。</span>
                 </div>
 
                 <!-- =================================== -->
@@ -81,13 +56,13 @@
 
                 <div class="game-entry completed">
                     <div class="game-cover">
-                        <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx44115-QcH1sTWNYTyg.jpg"
+                        <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/TwinPeaks_openingshotcredits.jpg"
                             alt="game cover">
                     </div>
                     <div class="game-details">
-                        <h3 class="game-title"><a href="#">プラナス・ガール</a></h3>
+                        <h3 class="game-title"><a href="#">ツイン・ピークス</a></h3>
                         <div class="game-meta">
-                            <span>// CHAPTERS: 43/43</span>
+                            <span>// EPISODES: 48/48</span>
                             <span>// RATING: 10/10</span>
                         </div>
                         <p class="game-comment">
