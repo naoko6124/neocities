@@ -1,6 +1,6 @@
 /* Main Post Container */
 .blog-post {
-    background-color: var(--post-bg);
+    background-color: var(--white);
     border: 1px dotted var(--pastel-purple);
     padding: 20px;
     margin-bottom: 25px;
