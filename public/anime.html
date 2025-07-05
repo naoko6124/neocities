@@ -16,6 +16,16 @@
             .then(data => {
                 document.getElementById('sidebar').innerHTML += data;
             });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainContent = document.querySelector('.main-content');
+
+            const watching = mainContent.querySelectorAll('.watching');
+            document.querySelector('#watching').innerHTML += ": " + watching.length;
+            
+            const completed = mainContent.querySelectorAll('.completed');
+            document.querySelector('#completed').innerHTML += ": " + completed.length;
+        });
     </script>
 </head>
 
@@ -45,9 +55,9 @@
                 <!-- ================================== -->
                 <!--              WATCHING              -->
                 <!-- ================================== -->
-                <p class="end-of-list">// WATCHING</p>
+                <p class="end-of-list" id="watching">// WATCHING</p>
 
-                <div class="game-entry">
+                <div class="game-entry watching">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx235-MyYT7K3chBdO.jpg"
                             alt="game cover">
@@ -67,9 +77,9 @@
                 <!-- =================================== -->
                 <!--              COMPLETED              -->
                 <!-- =================================== -->
-                <p class="end-of-list">// COMPLETED</p>
+                <p class="end-of-list" id="completed">// COMPLETED</p>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx7817-6kYE5LRNoL97.jpg"
                             alt="game cover">
@@ -86,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2251-tTQoWxVy4472.jpg"
                             alt="game cover">
@@ -103,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6347-DCSHLkCY7UT3.jpg"
                             alt="game cover">
@@ -120,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx8516-uAw5qWkceccn.jpg"
                             alt="game cover">
@@ -137,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107660-hgknnyaLchJW.png"
                             alt="game cover">
@@ -154,7 +164,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97994-JZ1rLkJBcO8V.png"
                             alt="game cover">
@@ -171,7 +181,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx101283-YpZqD7wrzWui.jpg"
                             alt="game cover">
@@ -188,7 +198,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20997-axVYrsIfjtYJ.jpg"
                             alt="game cover">
@@ -205,7 +215,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14741-CGXEIeUe2roA.jpg"
                             alt="game cover">
@@ -222,7 +232,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg"
                             alt="game cover">
@@ -239,7 +249,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg"
                             alt="game cover">
@@ -256,7 +266,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx17827-glAvrjSWSoWS.jpg"
                             alt="game cover">
@@ -273,7 +283,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15583-Sxd2J4RJdRhj.jpg"
                             alt="game cover">
@@ -290,7 +300,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx19163-eHXj3mNRaOXt.jpg"
                             alt="game cover">
@@ -307,7 +317,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg"
                             alt="game cover">
@@ -324,7 +334,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6746-3LTwM95Uqeoa.png"
                             alt="game cover">
@@ -341,7 +351,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20880-WsvmgSdL8lhP.png"
                             alt="game cover">
@@ -358,7 +368,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20652-8ft6GZKEoeWn.png"
                             alt="game cover">
@@ -375,7 +385,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20879-IqgXMXuUMvRM.png"
                             alt="game cover">
@@ -392,7 +402,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109298-suwdIUbJEPJx.png"
                             alt="game cover">
@@ -409,7 +419,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21685-h1SrcpaNnrIq.jpg"
                             alt="game cover">
@@ -426,7 +436,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98035-rdkjeqUUsG2j.jpg"
                             alt="game cover">
@@ -443,7 +453,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19603-ycT0pyEgDVQu.jpg"
                             alt="game cover">
@@ -460,7 +470,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20792-Q53sZsUAh5FF.jpg"
                             alt="game cover">
@@ -477,7 +487,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10087-M4Hd9qrHGrXk.png"
                             alt="game cover">
@@ -494,7 +504,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11741-oEy1fJHYm2zJ.jpg"
                             alt="game cover">
@@ -511,7 +521,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21878-rfzDjP2gjxGR.jpg"
                             alt="game cover">
@@ -528,7 +538,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20994-pSDk4I58jAK5.jpg"
                             alt="game cover">
@@ -545,7 +555,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21364-6ikYd5J46dt0.jpg"
                             alt="game cover">
@@ -562,7 +572,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20668-6UslJY5NDYNh.png"
                             alt="game cover">
@@ -579,7 +589,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14131-EP12xXteLTiF.jpg"
                             alt="game cover">
@@ -596,7 +606,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20517-SNNUtav2knou.jpg"
                             alt="game cover">
@@ -613,7 +623,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3002-BExanPfxp888.jpg"
                             alt="game cover">
@@ -630,7 +640,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx121-zjmixZ428Mwv.png"
                             alt="game cover">
@@ -647,7 +657,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg"
                             alt="game cover">
@@ -664,7 +674,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11785-cBfqpOetdIeF.jpg"
                             alt="game cover">
@@ -681,7 +691,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15809-ECv3HyOYJKrk.jpg"
                             alt="game cover">
@@ -698,7 +708,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx15225-wQg1w96ABj0p.jpg"
                             alt="game cover">
@@ -715,7 +725,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx11617-nmxMU9Zh3H5R.jpg"
                             alt="game cover">
@@ -732,7 +742,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20745-HzWTPFv0P13I.jpg"
                             alt="game cover">
@@ -749,7 +759,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx15451-A5T54vmxUq9t.jpg"
                             alt="game cover">
@@ -766,7 +776,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20987-9Tq7kZTeJPMo.jpg"
                             alt="game cover">
@@ -783,7 +793,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx124080-oeviACzGv5Vx.jpg"
                             alt="game cover">
@@ -800,7 +810,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98596-E2aZouOyuQ8G.jpg"
                             alt="game cover">

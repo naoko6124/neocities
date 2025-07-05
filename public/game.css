@@ -46,8 +46,3 @@
 .game-comment {
     margin: 0;
 }
-.end-of-list {
-    text-align: center;
-    color: var(--pastel-purple);
-    margin-top: 30px;
-}

@@ -16,6 +16,16 @@
             .then(data => {
                 document.getElementById('sidebar').innerHTML += data;
             });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainContent = document.querySelector('.main-content');
+
+            const reading = mainContent.querySelectorAll('.reading');
+            document.querySelector('#reading').innerHTML += ": " + reading.length;
+            
+            const completed = mainContent.querySelectorAll('.completed');
+            document.querySelector('#completed').innerHTML += ": " + completed.length;
+        });
     </script>
 </head>
 
@@ -45,9 +55,9 @@
                 <!-- ================================= -->
                 <!--              READING              -->
                 <!-- ================================= -->
-                <p class="end-of-list">// READING</p>
+                <p class="end-of-list" id="reading">// READING</p>
 
-                <div class="game-entry">
+                <div class="game-entry reading">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/9a0374c34b7f2fded837332db33cdf77.jpg"
                             alt="game cover">
@@ -68,9 +78,9 @@
                 <!-- =================================== -->
                 <!--              COMPLETED              -->
                 <!-- =================================== -->
-                <p class="end-of-list">// COMPLETED</p>
+                <p class="end-of-list" id="completed">// COMPLETED</p>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/3880b651fac0e6a246c7f75319fc4c4a.jpg"
                             alt="game cover">
@@ -88,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/684136b89e3982aaf7539b6b99641106.jpg"
                             alt="game cover">
@@ -106,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/43f362aa1849db9185a239b298f7737b.jpg"
                             alt="game cover">
@@ -124,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/0a1ad7eeca0e3db78bf79f31b6e1ddeb.jpg"
                             alt="game cover">
@@ -142,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/4090a196c63b7df74f2c7acf6821a9ef.jpg"
                             alt="game cover">
@@ -160,7 +170,7 @@
                     </div>
                 </div>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://cdn2.steamgriddb.com/thumb/eaf927f30fd898ba45e553621aa83224.jpg"
                             alt="game cover">

@@ -16,6 +16,16 @@
             .then(data => {
                 document.getElementById('sidebar').innerHTML += data;
             });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mainContent = document.querySelector('.main-content');
+
+            const reading = mainContent.querySelectorAll('.reading');
+            document.querySelector('#reading').innerHTML += ": " + reading.length;
+            
+            const completed = mainContent.querySelectorAll('.completed');
+            document.querySelector('#completed').innerHTML += ": " + completed.length;
+        });
     </script>
 </head>
 
@@ -45,9 +55,9 @@
                 <!-- ================================== -->
                 <!--              WATCHING              -->
                 <!-- ================================== -->
-                <p class="end-of-list">// READING</p>
+                <p class="end-of-list" id="reading">// READING</p>
 
-                <div class="game-entry">
+                <div class="game-entry reading">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg"
                             alt="game cover">
@@ -67,9 +77,9 @@
                 <!-- =================================== -->
                 <!--              COMPLETED              -->
                 <!-- =================================== -->
-                <p class="end-of-list">// COMPLETED</p>
+                <p class="end-of-list" id="completed">// COMPLETED</p>
 
-                <div class="game-entry">
+                <div class="game-entry completed">
                     <div class="game-cover">
                         <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx44115-QcH1sTWNYTyg.jpg"
                             alt="game cover">
