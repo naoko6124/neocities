@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なおこ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <script>
+        fetch('./profile.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML += data;
+            });
+    </script>
+</head>
+
+<body>
+
+    <table class="main-layout-table">
+        <tr>
+            <!-- ================================== -->
+            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
+            <!-- ================================== -->
+            <td class="sidebar" id="sidebar">
+                <div class="vertical-header">
+                    オンライン
+                </div>
+            </td>
+
+            <!-- ================================== -->
+            <!--        MAIN CONTENT AREA           -->
+            <!-- ================================== -->
+            <td class="main-content">
+
+                <div class="page-title">
+                    <h1>Online Games // オンラインゲーム</h1>
+                    <span>私がオンラインで遊んでいる場所はこちら。</span>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/2/1/3/1028213_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">モンスターハンターワイルズ</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/4/7/7/648477_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">モンスターハンター：ワールド</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://gamefaqs.gamespot.com/a/box/8/0/9/243809_front.jpg" alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">ファイナルファンタジーXIV</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: STEAM</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <p class="end-of-list">// END OF FILE</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

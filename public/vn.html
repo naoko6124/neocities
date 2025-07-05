@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なおこ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+    <script>
+        fetch('./profile.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidebar').innerHTML += data;
+            });
+    </script>
+</head>
+
+<body>
+
+    <table class="main-layout-table">
+        <tr>
+            <!-- ================================== -->
+            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
+            <!-- ================================== -->
+            <td class="sidebar" id="sidebar">
+                <div class="vertical-header">
+                    ビジュアル<br>ノベル
+                </div>
+            </td>
+
+            <!-- ================================== -->
+            <!--        MAIN CONTENT AREA           -->
+            <!-- ================================== -->
+            <td class="main-content">
+
+                <div class="page-title">
+                    <h1>Visual Novels // ビジュアルノベル</h1>
+                    <span>心に残った物語たちの、小さな記録。</span>
+                </div>
+
+                <!-- ================================= -->
+                <!--              READING              -->
+                <!-- ================================= -->
+                <p class="end-of-list">// READING</p>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/9a0374c34b7f2fded837332db33cdf77.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode7</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: -/10</span>
+                            <span>// DATE: --/--</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <!-- =================================== -->
+                <!--              COMPLETED              -->
+                <!-- =================================== -->
+                <p class="end-of-list">// COMPLETED</p>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/3880b651fac0e6a246c7f75319fc4c4a.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode6</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/684136b89e3982aaf7539b6b99641106.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode5</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/43f362aa1849db9185a239b298f7737b.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode4</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/04</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/0a1ad7eeca0e3db78bf79f31b6e1ddeb.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode3</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/4090a196c63b7df74f2c7acf6821a9ef.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode2</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <div class="game-entry">
+                    <div class="game-cover">
+                        <img src="https://cdn2.steamgriddb.com/thumb/eaf927f30fd898ba45e553621aa83224.jpg"
+                            alt="game cover">
+                    </div>
+                    <div class="game-details">
+                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode1</a></h3>
+                        <div class="game-meta">
+                            <span>// PLATFORM: PC</span>
+                            <span>// RATING: 10/10</span>
+                            <span>// DATE: 25/03</span>
+                        </div>
+                        <p class="game-comment">
+                            ---
+                        </p>
+                    </div>
+                </div>
+
+                <p class="end-of-list">// END OF FILE</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
