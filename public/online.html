@@ -16,6 +16,25 @@
             .then(data => {
                 document.getElementById('sidebar').innerHTML += data;
             });
+
+        fetch("./online.json")
+            .then(response => response.json())
+            .then(data => {
+                const playingList = document.getElementById("playing-list");
+                const template = document.getElementById("game-entry-template");
+
+                console.log(data);
+                document.querySelector('#playing').innerHTML += ": " + data.playing.length;
+
+                data.playing.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    playingList.appendChild(clone);
+                });
+            });
     </script>
 </head>
 
@@ -42,50 +61,24 @@
                     <span>私がオンラインで遊んでいる場所はこちら。</span>
                 </div>
 
-                <div class="game-entry">
-                    <div class="game-cover">
-                        <img src="https://gamefaqs.gamespot.com/a/box/2/1/3/1028213_front.jpg" alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">モンスターハンターワイルズ</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: STEAM</span>
+                <template id="game-entry-template">
+                    <div class="game-entry">
+                        <div class="game-cover">
+                            <img src="" class="game-img">
                         </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
+                        <div class="game-details">
+                            <h3 class="game-title"><a href="#" class="game-link"></a></h3>
+                            <div class="game-meta">
+                                <span class="game-platform"></span>
+                            </div>
+                            <p class="game-comment"></p>
+                        </div>
                     </div>
-                </div>
+                </template>
 
-                <div class="game-entry">
-                    <div class="game-cover">
-                        <img src="https://gamefaqs.gamespot.com/a/box/4/7/7/648477_front.jpg" alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">モンスターハンター：ワールド</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: STEAM</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
+                <p class="end-of-list" id="playing">// PLAYING</p>
 
-                <div class="game-entry">
-                    <div class="game-cover">
-                        <img src="https://gamefaqs.gamespot.com/a/box/8/0/9/243809_front.jpg" alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">ファイナルファンタジーXIV</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: STEAM</span>
-                        </div>
-                        <p class="game-comment">
-                            ただいま「暁月のフィナーレ」進行中。<a href="https://na.finalfantasyxiv.com/lodestone/character/39785216/">→ キャラクタープロフィールを見る</a><br>メインジョブはリーパーと白魔道士です。ワールドはBehemothです。
-                        </p>
-                    </div>
-                </div>
+                <div id="playing-list"></div>
 
                 <p class="end-of-list">// END OF FILE</p>
             </td>

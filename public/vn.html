@@ -16,16 +16,40 @@
             .then(data => {
                 document.getElementById('sidebar').innerHTML += data;
             });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainContent = document.querySelector('.main-content');
-
-            const reading = mainContent.querySelectorAll('.reading');
-            document.querySelector('#reading').innerHTML += ": " + reading.length;
             
-            const completed = mainContent.querySelectorAll('.completed');
-            document.querySelector('#completed').innerHTML += ": " + completed.length;
-        });
+        fetch("./vn.json")
+            .then(response => response.json())
+            .then(data => {
+                const readingList = document.getElementById("reading-list");
+                const completedList = document.getElementById("completed-list");
+                const template = document.getElementById("game-entry-template");
+
+                console.log(data);  
+                document.querySelector('#reading').innerHTML += ": " + data.reading.length;
+                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
+
+                data.reading.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.start} → ${e.end}`;
+                    clone.querySelector(".game-language").textContent = `// ${e.language}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    readingList.appendChild(clone);
+                });
+
+                data.completed.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.start} → ${e.end}`;
+                    clone.querySelector(".game-language").textContent = `// ${e.language}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    completedList.appendChild(clone);
+                });
+            });
     </script>
 </head>
 
@@ -33,18 +57,12 @@
 
     <table class="main-layout-table">
         <tr>
-            <!-- ================================== -->
-            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
-            <!-- ================================== -->
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
                     ビジュアル<br>ノベル
                 </div>
             </td>
 
-            <!-- ================================== -->
-            <!--        MAIN CONTENT AREA           -->
-            <!-- ================================== -->
             <td class="main-content">
 
                 <div class="page-title">
@@ -52,159 +70,30 @@
                     <span>心に残った物語たちの、小さな記録。</span>
                 </div>
 
-                <!-- ================================= -->
-                <!--              READING              -->
-                <!-- ================================= -->
+                <template id="game-entry-template">
+                    <div class="game-entry">
+                        <div class="game-cover">
+                            <img src="" class="game-img">
+                        </div>
+                        <div class="game-details">
+                            <h3 class="game-title"><a href="#" class="game-link"></a></h3>
+                            <div class="game-meta">
+                                <span class="game-platform"></span>
+                                <span class="game-date"></span>
+                                <span class="game-language"></span>
+                            </div>
+                            <p class="game-comment"></p>
+                        </div>
+                    </div>
+                </template>
+
                 <p class="end-of-list" id="reading">// READING</p>
 
-                <div class="game-entry reading">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/9a0374c34b7f2fded837332db33cdf77.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode7</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/04/27 → --/--/--</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
+                <div id="reading-list"></div>
 
-                <div class="game-entry reading">
-                    <div class="game-cover">
-                        <img src="https://t.vndb.org/cv.t/73/89173.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">はなひらっ！</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/07/04 → --/--/--</span>
-                            <span>// 日本語</span>
-                        </div>
-                        <p class="game-comment">
-                            かわいい
-                        </p>
-                    </div>
-                </div>
-
-                <!-- =================================== -->
-                <!--              COMPLETED              -->
-                <!-- =================================== -->
                 <p class="end-of-list" id="completed">// COMPLETED</p>
 
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/3880b651fac0e6a246c7f75319fc4c4a.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode6</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/04/19 → 25/04/27</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/684136b89e3982aaf7539b6b99641106.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode5</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/04/12 → 25/04/19</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/43f362aa1849db9185a239b298f7737b.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode4</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/03/31 → 25/04/12</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/0a1ad7eeca0e3db78bf79f31b6e1ddeb.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode3</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/03/23 → 25/03/31</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            これには完全にやられた。ほぼずっとベアトを信じてたのに、最後には自分もバトラもベアトにしてやられた感がすごい。
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/4090a196c63b7df74f2c7acf6821a9ef.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode2</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/03/16 → 25/03/23</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
-
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://cdn2.steamgriddb.com/thumb/eaf927f30fd898ba45e553621aa83224.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">うみねこのなく頃に Episode1</a></h3>
-                        <div class="game-meta">
-                            <span>// PLATFORM: PC</span>
-                            <span>// DATE: 25/03/11 → 25/03/16</span>
-                            <span>// ENGLISH</span>
-                        </div>
-                        <p class="game-comment">
-                            最初はまるで探偵小説みたいで、最後に謎が解けると思ってたのに、結局テーブルがひっくり返ってしまった。
-                        </p>
-                    </div>
-                </div>
+                <div id="completed-list"></div>
 
                 <p class="end-of-list">// END OF FILE</p>
             </td>

@@ -1,0 +1,78 @@
+{
+    "reading": [
+        {
+            "title": "うみねこのなく頃に Episode7",
+            "cover": "https://cdn2.steamgriddb.com/thumb/9a0374c34b7f2fded837332db33cdf77.jpg",
+            "platform": "PC",
+            "start": "25/04/27",
+            "end": "",
+            "language": "ENGLISH",
+            "comment": "---"
+        },
+        {
+            "title": "はなひらっ！",
+            "cover": "https://t.vndb.org/cv.t/73/89173.jpg",
+            "platform": "PC",
+            "start": "25/07/04",
+            "end": "",
+            "language": "",
+            "comment": "かわいい"
+        }
+    ],
+    "completed": [
+        {
+            "title": "うみねこのなく頃に Episode6",
+            "cover": "https://cdn2.steamgriddb.com/thumb/3880b651fac0e6a246c7f75319fc4c4a.jpg",
+            "platform": "PC",
+            "start": "25/04/19",
+            "end": "25/04/27",
+            "language": "ENGLISH",
+            "comment": "---"
+        },
+        {
+            "title": "うみねこのなく頃に Episode5",
+            "cover": "https://cdn2.steamgriddb.com/thumb/684136b89e3982aaf7539b6b99641106.jpg",
+            "platform": "PC",
+            "start": "25/04/12",
+            "end": "25/04/19",
+            "language": "ENGLISH",
+            "comment": "---"
+        },
+        {
+            "title": "うみねこのなく頃に Episode4",
+            "cover": "https://cdn2.steamgriddb.com/thumb/43f362aa1849db9185a239b298f7737b.jpg",
+            "platform": "PC",
+            "start": "25/03/31",
+            "end": "25/04/12",
+            "language": "ENGLISH",
+            "comment": "---"
+        },
+        {
+            "title": "うみねこのなく頃に Episode3",
+            "cover": "https://cdn2.steamgriddb.com/thumb/0a1ad7eeca0e3db78bf79f31b6e1ddeb.jpg",
+            "platform": "PC",
+            "start": "25/03/23",
+            "end": "25/03/31",
+            "language": "ENGLISH",
+            "comment": "これには完全にやられた。ほぼずっとベアトを信じてたのに、最後には自分もバトラもベアトにしてやられた感がすごい。"
+        },
+        {
+            "title": "うみねこのなく頃に Episode2",
+            "cover": "https://cdn2.steamgriddb.com/thumb/4090a196c63b7df74f2c7acf6821a9ef.jpg",
+            "platform": "PC",
+            "start": "25/03/16",
+            "end": "25/03/23",
+            "language": "ENGLISH",
+            "comment": "---"
+        },
+        {
+            "title": "うみねこのなく頃に Episode1",
+            "cover": "https://cdn2.steamgriddb.com/thumb/eaf927f30fd898ba45e553621aa83224.jpg",
+            "platform": "PC",
+            "start": "25/03/11",
+            "end": "25/03/16",
+            "language": "ENGLISH",
+            "comment": "最初はまるで探偵小説みたいで、最後に謎が解けると思ってたのに、結局テーブルがひっくり返ってしまった。"
+        }
+    ]
+}

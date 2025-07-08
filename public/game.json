@@ -1,0 +1,328 @@
+{
+    "playing": [
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/6/2/156862_front.jpg",
+            "title": "キングダム ハーツ 3D ［ドリーム ドロップ ディスタンス］",
+            "platform": "3DS",
+            "date": "--/--/--",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/8/9/64889_front.jpg",
+            "title": "ロックマンゼロ4",
+            "platform": "GBA",
+            "date": "--/--/--",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/1/6/50916_front.jpg",
+            "title": "ロックマン7",
+            "platform": "SFC",
+            "date": "--/--/--",
+            "comment": "---"
+        }
+    ],
+    "completed": [
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/3/6/91636_front.jpg",
+            "title": "キングダム ハーツ バース バイ スリープ",
+            "platform": "PSP",
+            "date": "25/07/03",
+            "comment": "ゲーム性もストーリーも良かったけど、最初のキャンペーンのセーブデータ消えちゃって、もう一回やるハメになった。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/0/4/55604_front.jpg",
+            "title": "キングダム ハーツII",
+            "platform": "PS2",
+            "date": "25/06/21",
+            "comment": "シリーズで一番ゲーム性が良かったと思う。ストーリーもなかなか良かった！"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/9/5/57495_front.jpg",
+            "title": "キングダム ハーツ チェイン オブ メモリーズ",
+            "platform": "PS2",
+            "date": "25/06/08",
+            "comment": "今作はゲーム性が変わってて、最初は楽しかったけど、後半はちょっとダレた。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/3/6/14136_front.jpg",
+            "title": "キングダム ハーツ",
+            "platform": "PS2",
+            "date": "25/05/31",
+            "comment": "ゲーム自体は面白いけど、ちょっと分かりづらいところもあって、クリアには攻略見ながらやった。でも楽しかった！"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/0/9/52009_front.jpg",
+            "title": "悪魔城ドラキュラX 血の輪廻",
+            "platform": "PC-ENGINE",
+            "date": "25/05/17",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/8/8/5088_front.jpg",
+            "title": "ロックマン8",
+            "platform": "PS",
+            "date": "25/05/16",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/9/3/673893_front.jpg",
+            "title": "ロックマン11",
+            "platform": "STEAM",
+            "date": "25/05/15",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/1/2/296612_front.jpg",
+            "title": "悪魔城ドラキュラ",
+            "platform": "FC",
+            "date": "25/05/14",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/4/4/22144_front.jpg",
+            "title": "ロックマン6",
+            "platform": "FC",
+            "date": "25/05/13",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/2/1/49421_front.jpg",
+            "title": "ロックマン5",
+            "platform": "FC",
+            "date": "25/05/12",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/2/9/22129_front.jpg",
+            "title": "ロックマン4",
+            "platform": "FC",
+            "date": "25/05/12",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/6/4/58964_front.jpg",
+            "title": "ロックマンゼロ3",
+            "platform": "GBA",
+            "date": "25/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/1/4/22114_front.jpg",
+            "title": "ロックマン3",
+            "platform": "FC",
+            "date": "25/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/9/5/22095_front.jpg",
+            "title": "ロックマン2",
+            "platform": "FC",
+            "date": "25/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/7/8/22078_front.jpg",
+            "title": "ロックマン",
+            "platform": "FC",
+            "date": "25/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/1/4/52414_front.jpg",
+            "title": "ロックマンゼロ2",
+            "platform": "GBA",
+            "date": "25/05/10",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/7/9/16479_front.jpg",
+            "title": "ロックマンゼロ",
+            "platform": "GBA",
+            "date": "25/05/09",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/5/1/0/60510_front.jpg",
+            "title": "ロックマンX8",
+            "platform": "PS2",
+            "date": "25/05/06",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/5/6/4/18564_front.jpg",
+            "title": "ロックマンX7",
+            "platform": "PS2",
+            "date": "25/05/04",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/5/5/14055_front.jpg",
+            "title": "ロックマンX6",
+            "platform": "PS",
+            "date": "25/05/03",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/5/1/8/10518_front.jpg",
+            "title": "ロックマンX5",
+            "platform": "PS",
+            "date": "25/04/23",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/7/2/7/19727_front.jpg",
+            "title": "ロックマンX",
+            "platform": "SFC",
+            "date": "25/04/22",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/2/1/20121_front.jpg",
+            "title": "ロックマンX3",
+            "platform": "SFC",
+            "date": "25/04/03",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/0/9/5109_front.jpg",
+            "title": "ロックマンX4",
+            "platform": "PS",
+            "date": "25/03/31",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/2/2/50922_front.jpg",
+            "title": "ロックマンX2",
+            "platform": "SFC",
+            "date": "25/03/26",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/9/7/1030697_front.jpg",
+            "title": "メタファー:リファンタジオ",
+            "platform": "STEAM",
+            "date": "25/01/18",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/7/1/5/960715_front.jpg",
+            "title": "ペルソナ3 リロード",
+            "platform": "STEAM",
+            "date": "24/12/25",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/3/0/6/719306_front.jpg",
+            "title": "ペルソナ5 ザ・ロイヤル",
+            "platform": "STEAM",
+            "date": "24/11/16",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/2/4/3/979243_front.jpg",
+            "title": "Little Goody Two Shoes",
+            "platform": "STEAM",
+            "date": "24/10/13",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/2/0/8/634208_front.jpg",
+            "title": "UNDERTALE",
+            "platform": "STEAM",
+            "date": "24/04/14",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/8/7/744687_front.jpg",
+            "title": "悪魔城ドラキュラX 月下の夜想曲",
+            "platform": "PS",
+            "date": "23/08/19",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/9/4/734694_front.jpg",
+            "title": "バイオハザード RE:3",
+            "platform": "STEAM",
+            "date": "23/05/30",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/3/8/739038_front.jpg",
+            "title": "デビルメイクライ3 Special Edition",
+            "platform": "PS2",
+            "date": "23/05/17",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/7/4/5/717745_front.jpg",
+            "title": "デビルメイクライ",
+            "platform": "PS2",
+            "date": "23/05/10",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/4/0/784140_front.jpg",
+            "title": "バイオハザード ヴィレッジ",
+            "platform": "STEAM",
+            "date": "23/05/05",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/9/7/899497_front.jpg",
+            "title": "バイオハザード RE:4",
+            "platform": "STEAM",
+            "date": "23/04/15",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/3/0/13630_front.jpg",
+            "title": "クロックタワー3",
+            "platform": "PS2",
+            "date": "23/04/04",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/9/8/875898_front.jpg",
+            "title": "バイオハザード RE:2",
+            "platform": "STEAM",
+            "date": "23/04/02",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/2/4/704624_front.jpg",
+            "title": "バイオハザード4",
+            "platform": "PS2",
+            "date": "23/02/20",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/4/6/6646_front.jpg",
+            "title": "バイオハザード2",
+            "platform": "PS",
+            "date": "23/02/18",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/7/9/113679_front.jpg",
+            "title": "メタルギア ライジング リベンジェンス",
+            "platform": "STEAM",
+            "date": "21/12/26",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/0/8/793108_front.jpg",
+            "title": "パンツァードラグーン：リメイク",
+            "platform": "STEAM",
+            "date": "21/12/05",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/5/1/614051_front.jpg",
+            "title": "バイオハザード7 レジデント イービル",
+            "platform": "STEAM",
+            "date": "17/02/05",
+            "comment": "---"
+        }
+    ]
+}

@@ -17,15 +17,35 @@
                 document.getElementById('sidebar').innerHTML += data;
             });
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const mainContent = document.querySelector('.main-content');
+        fetch("./manga.json")
+            .then(response => response.json())
+            .then(data => {
+                const readingList = document.getElementById("reading-list");
+                const completedList = document.getElementById("completed-list");
+                const template = document.getElementById("game-entry-template");
 
-            const reading = mainContent.querySelectorAll('.reading');
-            document.querySelector('#reading').innerHTML += ": " + reading.length;
-            
-            const completed = mainContent.querySelectorAll('.completed');
-            document.querySelector('#completed').innerHTML += ": " + completed.length;
-        });
+                console.log(data);  
+                document.querySelector('#reading').innerHTML += ": " + data.reading.length;
+                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
+
+                data.reading.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-chapters").textContent = `// CHAPTERS: ${e.read}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    readingList.appendChild(clone);
+                });
+
+                data.completed.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-chapters").textContent = `// CHAPTERS: ${e.read}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    completedList.appendChild(clone);
+                });
+            });
     </script>
 </head>
 
@@ -33,18 +53,12 @@
 
     <table class="main-layout-table">
         <tr>
-            <!-- ================================== -->
-            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
-            <!-- ================================== -->
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
                     漫画
                 </div>
             </td>
 
-            <!-- ================================== -->
-            <!--        MAIN CONTENT AREA           -->
-            <!-- ================================== -->
             <td class="main-content">
 
                 <div class="page-title">
@@ -52,47 +66,28 @@
                     <span>読了済みと読書中の漫画のリスト。</span>
                 </div>
 
-                <!-- ================================== -->
-                <!--              READING               -->
-                <!-- ================================== -->
+                <template id="game-entry-template">
+                    <div class="game-entry">
+                        <div class="game-cover">
+                            <img src="" class="game-img">
+                        </div>
+                        <div class="game-details">
+                            <h3 class="game-title"><a href="#" class="game-link"></a></h3>
+                            <div class="game-meta">
+                                <span class="game-chapters"></span>
+                            </div>
+                            <p class="game-comment"></p>
+                        </div>
+                    </div>
+                </template>
+
                 <p class="end-of-list" id="reading">// READING</p>
 
-                <div class="game-entry reading">
-                    <div class="game-cover">
-                        <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">ベルセルク</a></h3>
-                        <div class="game-meta">
-                            <span>// CHAPTERS: 375/382+</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
+                <div id="reading-list"></div>
 
-                <!-- =================================== -->
-                <!--              COMPLETED              -->
-                <!-- =================================== -->
                 <p class="end-of-list" id="completed">// COMPLETED</p>
 
-                <div class="game-entry completed">
-                    <div class="game-cover">
-                        <img src="https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx44115-QcH1sTWNYTyg.jpg"
-                            alt="game cover">
-                    </div>
-                    <div class="game-details">
-                        <h3 class="game-title"><a href="#">プラナス・ガール</a></h3>
-                        <div class="game-meta">
-                            <span>// CHAPTERS: 43/43</span>
-                        </div>
-                        <p class="game-comment">
-                            ---
-                        </p>
-                    </div>
-                </div>
+                <div id="completed-list"></div>
 
                 <p class="end-of-list">// END OF FILE</p>
             </td>
