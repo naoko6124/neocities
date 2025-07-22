@@ -10,16 +10,25 @@
             "comment": "---"
         },
         {
+            "cover": "https://t.vndb.org/cv.t/66/104366.jpg",
+            "title": "その花びらをくちづけを",
+            "platform": "PC",
+            "start": "25/07/13",
+            "end": "--/--/--",
+            "language": "日本語",
+            "comment": "---"
+        }
+    ],
+    "completed": [
+        {
             "cover": "https://t.vndb.org/cv.t/73/89173.jpg",
             "title": "はなひらっ！",
             "platform": "PC",
             "start": "25/07/04",
-            "end": "",
+            "end": "25/07/13",
             "language": "日本語",
-            "comment": "かわいい"
-        }
-    ],
-    "completed": [
+            "comment": "かわいい萌えゲーだね"
+        },
         {
             "cover": "https://cdn2.steamgriddb.com/thumb/3880b651fac0e6a246c7f75319fc4c4a.jpg",
             "title": "うみねこのなく頃に Episode6",

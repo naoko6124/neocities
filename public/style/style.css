@@ -18,7 +18,7 @@ body {
     font-family: "MS PGothic", "Meiryo", "Osaka", monospace;
     
     background-color: var(--cotton-candy);    
-    background-image: url('images/bg-pattern.png');
+    background-image: url('/images/bg-pattern.png');
     color: var(--deep-indigo);
     
     font-size: 14px;

@@ -5,28 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>なおこ</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="profile.css">
-    <link rel="stylesheet" type="text/css" href="game.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
-    <script src="profile.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/style/profile.css">
+    <link rel="stylesheet" type="text/css" href="/style/game.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <script src="/profile.js"></script>
     <script>
-        fetch("./online.json")
+        fetch("./data.json")
             .then(response => response.json())
             .then(data => {
                 const playingList = document.getElementById("playing-list");
+                const completedList = document.getElementById("completed-list");
                 const template = document.getElementById("game-entry-template");
 
-                console.log(data);
+                console.log(data);  
                 document.querySelector('#playing').innerHTML += ": " + data.playing.length;
+                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
 
                 data.playing.forEach(e => {
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
                     clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.date}`;
                     clone.querySelector(".game-comment").textContent = e.comment;
                     playingList.appendChild(clone);
+                });
+
+                data.completed.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.date}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    completedList.appendChild(clone);
                 });
             });
     </script>
@@ -36,23 +49,17 @@
 
     <table class="main-layout-table">
         <tr>
-            <!-- ================================== -->
-            <!--  SIDEBAR / VERTICAL NAVIGATION   -->
-            <!-- ================================== -->
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
-                    オンライン
+                    ゲームの記録
                 </div>
             </td>
 
-            <!-- ================================== -->
-            <!--        MAIN CONTENT AREA           -->
-            <!-- ================================== -->
             <td class="main-content">
 
                 <div class="page-title">
-                    <h1>Online Games // オンラインゲーム</h1>
-                    <span>私がオンラインで遊んでいる場所はこちら。</span>
+                    <h1>Game Archive // ゲームアーカイブ</h1>
+                    <span>プレイ済みとプレイ中ゲームのリスト。</span>
                 </div>
 
                 <template id="game-entry-template">
@@ -63,7 +70,8 @@
                         <div class="game-details">
                             <h3 class="game-title"><a href="#" class="game-link"></a></h3>
                             <div class="game-meta">
-                                <span class="game-platform"></span>
+                                <span class="game-platform">// PLATFORM: 3DS</span>
+                                <span class="game-date">// DATE: --/--/--</span>
                             </div>
                             <p class="game-comment"></p>
                         </div>
@@ -73,6 +81,10 @@
                 <p class="end-of-list" id="playing">// PLAYING</p>
 
                 <div id="playing-list"></div>
+
+                <p class="end-of-list" id="completed">// COMPLETED</p>
+
+                <div id="completed-list"></div>
 
                 <p class="end-of-list">// END OF FILE</p>
             </td>
