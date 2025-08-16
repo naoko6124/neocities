@@ -27,7 +27,7 @@
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
                     clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
-                    clone.querySelector(".game-date").textContent = `// DATE: ${e.date}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.start} → ${e.end}`;
                     clone.querySelector(".game-comment").textContent = e.comment;
                     playingList.appendChild(clone);
                 });
@@ -37,7 +37,7 @@
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
                     clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
-                    clone.querySelector(".game-date").textContent = `// DATE: ${e.date}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.start} → ${e.end}`;
                     clone.querySelector(".game-comment").textContent = e.comment;
                     completedList.appendChild(clone);
                 });

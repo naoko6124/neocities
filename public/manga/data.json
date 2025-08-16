@@ -1,20 +1,13 @@
 {
     "reading": [
         {
-            "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
-            "title": "ベルセルク",
-            "read": 375,
+            "cover": "https://cdn.myanimelist.net/images/manga/1/97267.jpg",
+            "title": "名探偵コナン",
+            "read": 1,
             "total": -1,
             "comment": "---"
         }
     ],
     "completed": [
-        {
-            "cover": "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx44115-QcH1sTWNYTyg.jpg",
-            "title": "プラナス・ガール",
-            "read": 43,
-            "total": 43,
-            "comment": "---"
-        }
     ]
 }

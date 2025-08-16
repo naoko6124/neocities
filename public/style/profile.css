@@ -18,6 +18,7 @@
     border: 2px solid var(--bubblegum-pink);
     padding: 2px;
     background: var(--white);
+    object-fit: cover;
     image-rendering: pixelated;
 }
 

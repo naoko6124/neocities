@@ -1,24 +1,26 @@
 /* --- Colors --- */
 :root {
-    --cotton-candy:#fcd6ff;
-    --deep-indigo: #4b296b;
+    --cotton-candy:#d6e0ff;
+    --deep-indigo: #29306b;
     --snow: #fffafa;
-    --mint-green: #a7ffd8;
-    --bubblegum-pink: #ff80c8;
+    --mint-green: #84edff;
+    --bubblegum-pink: #808dff;
     --white: #fff;
-    --pastel-purple: #cba6f7;
-    --neon-magenta: #ff4ec4;
+    --pastel-purple: #a7a6f7;
+    --neon-magenta: #4e51ff;
     --star-yellow: #fff47d;
-    --peachy-glow: #ffb6a9;
-    --hover-bg: #fff0f5;
+    --peachy-glow: #a9b9ff;
+    --hover-bg: #56caff;
 }
 
 /* --- Basic Setup & Fonts --- */
 body {
     font-family: "MS PGothic", "Meiryo", "Osaka", monospace;
     
+    background-attachment: fixed;
+    background-size: 100% auto;
     background-color: var(--cotton-candy);    
-    background-image: url('/images/bg-pattern.png');
+    background-image: url('https://www.ss-beta.co.jp/products/moegd/image/download/twitter/twitter_wallpaper_est.jpg');
     color: var(--deep-indigo);
     
     font-size: 14px;
