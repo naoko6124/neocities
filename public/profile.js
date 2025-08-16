@@ -7,10 +7,6 @@ fetch('/profile.html')
             document.getElementById('game-count').innerHTML += data.completed.length;
         });
 
-        fetch('/vn/data.json').then(response => response.json()).then(data => {
-            document.getElementById('vn-count').innerHTML += data.completed.length;
-        });
-
         fetch('/anime/data.json').then(response => response.json()).then(data => {
             document.getElementById('anime-count').innerHTML += data.completed.length;
         });
