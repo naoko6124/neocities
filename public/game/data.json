@@ -17,14 +17,6 @@
             "comment": "---"
         },
         {
-            "cover": "https://gamefaqs.gamespot.com/a/box/9/4/7/21947_front.jpg",
-            "title": "ファイナルファンタジーII",
-            "platform": "STEAM",
-            "start": "25/08/04",
-            "end": "--/--/--",
-            "comment": "---"
-        },
-        {
             "cover": "https://t.vndb.org/cv.t/66/104366.jpg",
             "title": "その花びらをくちづけを",
             "platform": "WIN",
@@ -34,6 +26,14 @@
         }
     ],
     "completed": [
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/4/7/21947_front.jpg",
+            "title": "ファイナルファンタジーII",
+            "platform": "STEAM",
+            "start": "25/08/04",
+            "end": "25/09/06",
+            "comment": "悲しい物語ですが、未来への希望が描かれています。"
+        },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/7/3/1/14731_front.jpg",
             "title": "ファイナルファンタジー",
