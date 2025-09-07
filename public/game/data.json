@@ -1,12 +1,20 @@
 {
     "playing": [
         {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/2/5/329125_thumb.jpg",
+            "title": "超次次元ゲイム ネプテューヌRe;Birth1",
+            "platform": "STEAM",
+            "start": "25/09/06",
+            "end": "--/--/--",
+            "comment": "---"
+        },
+        {
             "cover": "https://gamefaqs.gamespot.com/a/box/0/0/6/932006_front.jpg",
             "title": "ファイナルファンタジーIII",
             "platform": "STEAM",
             "start": "25/09/06",
             "end": "--/--/--",
-            "comment": "悲しい物語ですが、未来への希望が描かれています。"
+            "comment": "---"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/2/0/6/273206_front.jpg",
