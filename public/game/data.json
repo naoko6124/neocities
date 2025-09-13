@@ -1,6 +1,14 @@
 {
     "playing": [
         {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/1/6/52016_front.jpg",
+            "title": "ドラゴンスレイヤー英雄伝説",
+            "platform": "PC-88",
+            "start": "25/09/13",
+            "end": "--/--/--",
+            "comment": "---"
+        },
+        {
             "cover": "https://gamefaqs.gamespot.com/a/box/1/2/5/329125_thumb.jpg",
             "title": "超次次元ゲイム ネプテューヌRe;Birth1",
             "platform": "STEAM",
