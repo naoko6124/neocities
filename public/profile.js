@@ -11,7 +11,7 @@ fetch('/profile.html')
             document.getElementById('anime-count').innerHTML += data.completed.length;
         });
 
-        fetch('/manga/data.json').then(response => response.json()).then(data => {
-            document.getElementById('manga-count').innerHTML += data.completed.length;
+        fetch('/book/data.json').then(response => response.json()).then(data => {
+            document.getElementById('book-count').innerHTML += data.completed.length;
         });
     });
