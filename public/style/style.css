@@ -20,7 +20,7 @@ body {
     background-attachment: fixed;
     background-size: 100% auto;
     background-color: var(--cotton-candy);    
-    background-image: url('https://www.ss-beta.co.jp/products/moegd/image/download/twitter/twitter_wallpaper_est.jpg');
+    background-image: url('/images/wallpaper.png');
     color: var(--deep-indigo);
     
     font-size: 14px;
