@@ -33,14 +33,6 @@
             "comment": "---"
         },
         {
-            "cover": "https://gamefaqs.gamespot.com/a/box/3/4/2/311342_front.jpg",
-            "title": "ランス01 光をもとめて",
-            "platform": "WIN",
-            "start": "25/08/06",
-            "end": "--/--/--",
-            "comment": "---"
-        },
-        {
             "cover": "https://t.vndb.org/cv.t/66/104366.jpg",
             "title": "その花びらをくちづけを",
             "platform": "WIN",
@@ -50,6 +42,14 @@
         }
     ],
     "completed": [
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/3/4/2/311342_front.jpg",
+            "title": "ランス01 光をもとめて",
+            "platform": "WIN",
+            "start": "25/08/06",
+            "end": "24/09/24",
+            "comment": "面白くて楽しいのね。"
+        },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/9/2/2/21922_front.jpg",
             "title": "ドラゴン クエスト",
