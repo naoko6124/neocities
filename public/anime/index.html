@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なおこ</title>
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/style/profile.css">
+    <link rel="stylesheet" type="text/css" href="/style/game.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <script src="/profile.js"></script>
+    <script>
+        fetch("./data.json")
+            .then(response => response.json())
+            .then(data => {
+                const watchingList = document.getElementById("watching-list");
+                const completedList = document.getElementById("completed-list");
+                const template = document.getElementById("game-entry-template");
+
+                console.log(data);  
+                document.querySelector('#watching').innerHTML += ": " + data.watching.length;
+                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
+
+                data.watching.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-episodes").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    watchingList.appendChild(clone);
+                });
+
+                data.completed.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-episodes ").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    completedList.appendChild(clone);
+                });
+            });
+    </script>
+</head>
+
+<body>
+
+    <table class="main-layout-table">
+        <tr>
+            <td class="sidebar" id="sidebar">
+                <div class="vertical-header">
+                    アニメ
+                </div>
+            </td>
+
+            <td class="main-content">
+
+                <div class="page-title">
+                    <h1>Anime Archive // アニメアーカイブ</h1>
+                    <span>視聴済みと視聴中アニメのリスト。</span>
+                </div>
+
+                <template id="game-entry-template">
+                    <div class="game-entry">
+                        <div class="game-cover">
+                            <img src="" class="game-img">
+                        </div>
+                        <div class="game-details">
+                            <h3 class="game-title"><a href="#" class="game-link"></a></h3>
+                            <div class="game-meta">
+                                <span class="game-episodes"></span>
+                            </div>
+                            <p class="game-comment"></p>
+                        </div>
+                    </div>
+                </template>
+
+                <p class="end-of-list" id="watching">// WATCHING</p>
+
+                <div id="watching-list"></div>
+
+                <p class="end-of-list" id="completed">// COMPLETED</p>
+
+                <div id="completed-list"></div>
+
+                <p class="end-of-list">// STILL ADDING</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

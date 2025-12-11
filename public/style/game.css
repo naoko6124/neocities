@@ -1,0 +1,78 @@
+/* --- Game Entry --- */
+.game-entry {
+    display: flex;
+    border: 1px dotted var(--pastel-purple);
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.2s;
+}
+.game-entry:hover {
+    background-color: #c9fdff33; 
+}
+
+.game-cover {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.game-cover img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid var(--pastel-purple);
+    display: block;
+}
+
+.game-title {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+.game-title a {
+    color: var(--deep-indigo);
+    text-decoration: none;
+}
+.game-title a:hover {
+    color: var(--neon-magenta);
+    text-decoration: underline;
+    background: transparent;
+}
+
+.game-meta {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: var(--pastel-purple);
+}
+
+.game-comment {
+    margin: 0;
+}
+
+.game-details {
+    flex: 1;
+}
+
+/* --- Game Progress Bar --- */
+.game-progress {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #f0eaff;
+    border: 1px solid var(--pastel-purple);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.game-progress-fill {
+    height: 100%;
+    background-color: var(--neon-magenta);
+    transition: width 0.4s ease;
+}
+
+.game-progress-text {
+    display: block;
+    font-size: 11px;
+    color: var(--pastel-purple);
+    margin-top: 4px;
+    text-align: right;
+}

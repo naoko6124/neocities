@@ -1,0 +1,58 @@
+.profile-box {
+    border: 1px dotted var(--pastel-purple);
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.profile-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto 10px auto;
+    border: 2px solid var(--bubblegum-pink);
+    padding: 2px;
+    background: var(--white);
+    object-fit: cover;
+    image-rendering: pixelated;
+}
+
+.profile-name {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: var(--neon-magenta);
+}
+
+.profile-bio {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.profile-links {
+    text-align: center;
+}
+.profile-links a {
+    color: var(--neon-magenta);
+    text-decoration: underline;
+    margin: 0 5px;
+}
+.profile-links a:hover {
+    background: var(--star-yellow);
+    color: var(--deep-indigo); 
+}
+
+hr.dotted-hr {
+    border: none;
+    border-top: 1px dotted var(--pastel-purple);
+    margin: 15px 0;
+}
+
+marquee {
+    color: var(--peachy-glow);
+}
