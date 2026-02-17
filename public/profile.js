@@ -4,7 +4,7 @@ fetch('/profile.html')
         document.getElementById('sidebar').innerHTML += data;
         
         fetch('/game/data.json').then(response => response.json()).then(data => {
-            document.getElementById('game-count').innerHTML += data.completed.length;
+            document.getElementById('game-count').innerHTML += data.played.length;
         });
 
         fetch('/anime/data.json').then(response => response.json()).then(data => {
