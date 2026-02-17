@@ -4,91 +4,843 @@
             "cover": "https://gamefaqs.gamespot.com/a/box/0/1/6/52016_front.jpg",
             "title": "ドラゴンスレイヤー英雄伝説",
             "platform": "PC-88",
-            "start": "2025/09/13",
-            "end": "--/--/--",
+            "date": "--/--/--",
             "comment": "---"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/1/2/5/329125_thumb.jpg",
             "title": "超次次元ゲイム ネプテューヌRe;Birth1",
             "platform": "STEAM",
-            "start": "2025/09/06",
-            "end": "--/--/--",
-            "comment": "---"
-        },
-        {
-            "cover": "https://gamefaqs.gamespot.com/a/box/0/0/6/932006_front.jpg",
-            "title": "ファイナルファンタジーIII",
-            "platform": "STEAM",
-            "start": "2025/09/06",
-            "end": "--/--/--",
+            "date": "--/--/--",
             "comment": "---"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/2/0/6/273206_front.jpg",
             "title": "ドラッグ オン ドラグーン 3",
             "platform": "PS3",
-            "start": "2025/08/13",
-            "end": "--/--/--",
+            "date": "--/--/--",
             "comment": "---"
         },
         {
             "cover": "https://t.vndb.org/cv.t/66/104366.jpg",
             "title": "その花びらをくちづけを",
             "platform": "WIN",
-            "start": "2025/07/13",
-            "end": "--/--/--",
+            "date": "--/--/--",
+            "comment": "---"
+        },
+        {
+            "cover": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ204000/RJ203687_img_main.webp",
+            "title": "BLACK SOULS",
+            "platform": "STEAM",
+            "date": "--/--/--",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/4/41/Umi_ep7.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode7 Requiem of the golden witch",
+            "platform": "WIN",
+            "date": "--/--/--",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/5/0/868650_front.jpg",
+            "title": "地球防衛軍6",
+            "platform": "STEAM",
+            "date": "--/--/--",
             "comment": "---"
         }
     ],
-    "completed": [
+    "played": [
+        {
+            "cover": "https://img.dlsite.jp/modpub/images2/work/doujin/RJ186000/RJ185696_img_main.webp",
+            "title": "紅ずきんの森",
+            "platform": "WIN",
+            "date": "2026/02/17",
+            "comment": "悲しくてエロい物語。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/8/8/647888_front.jpg",
+            "title": "地球防衛軍5",
+            "platform": "STEAM",
+            "date": "2026/02/14",
+            "comment": "すごく楽しい、4.1より良い。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/5/2/753452_front.jpg",
+            "title": "東方風神録 〜 Mountain of Faith.",
+            "platform": "STEAM",
+            "date": "2026/01/31",
+            "comment": "再挑戦システムは前のゲームによりすごくいい、ステージを練習するのためにすごく便利です。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/7/4/6/864746_front.jpg",
+            "title": "東方花映塚 〜 Phantasmagoria of Flower View.",
+            "platform": "STEAM",
+            "date": "2026/01/31",
+            "comment": "マッチモードは楽しい。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/1/4/85114_front.jpg",
+            "title": "東方永夜抄 〜 Imperishable Night.",
+            "platform": "WIN",
+            "date": "2026/01/29",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/1/6/85116_front.jpg",
+            "title": "東方妖々夢 〜 Perfect Cherry Blossom.",
+            "platform": "WIN",
+            "date": "2026/01/28",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/4/4/54944_front.jpg",
+            "title": "THE 地球防衛軍",
+            "platform": "PS2",
+            "date": "2026/01/23",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/2/2/5/540225_front.jpg",
+            "title": "地球防衛軍 4.1 THE SHADOW OF NEW DESPAIR",
+            "platform": "STEAM",
+            "date": "2026/01/14",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/5/5/6/103556_front.jpg",
+            "title": "デススマイルズ",
+            "platform": "STEAM",
+            "date": "2025/12/30",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/0/7/932007_front.jpg",
+            "title": "ファイナルファンタジーIV",
+            "platform": "STEAM",
+            "date": "2025/11/30",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/0/6/932006_front.jpg",
+            "title": "ファイナルファンタジーIII",
+            "platform": "STEAM",
+            "date": "2025/11/23",
+            "comment": "ファミコンFFの中は最高、クラスシステムはめちゃいいです、すごく楽しい。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/8/0/1015980_front.jpg",
+            "title": "真・女神転生V Vengeance",
+            "platform": "STEAM",
+            "date": "2025/11/09",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/1/5/85115_front.jpg",
+            "title": "東方紅魔郷 〜 the Embodiment of Scarlet Devil.",
+            "platform": "WIN",
+            "date": "2025/11/04",
+            "comment": "クラシック、私の高校の頃のゲーム、すごく楽しい、キャラが大好き。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/1/8/1131018_front.jpg",
+            "title": "SILENT HILL f",
+            "platform": "STEAM",
+            "date": "2025/10/18",
+            "comment": "一つのルートは多くの事が未解決、でも続けてください。次のルートはすごく面白い。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/0/4/43804_front.jpg",
+            "title": "怒首領蜂大往生",
+            "platform": "PS2",
+            "date": "2025/10/16",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/1/5/1017115_front.jpg",
+            "title": "レイディアント シルバーガン",
+            "platform": "STEAM",
+            "date": "2025/10/10",
+            "comment": "---"
+        },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/9/4/6/93946_front.jpg",
             "title": "東方靈異伝 〜 Highly Responsive to Prayers",
             "platform": "PC-98",
-            "start": "2025/09/27",
-            "end": "2025/09/27",
+            "date": "2025/09/27",
             "comment": "すごく楽しい！"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/3/4/2/311342_front.jpg",
             "title": "ランス01 光をもとめて",
             "platform": "WIN",
-            "start": "2025/08/06",
-            "end": "2025/09/24",
+            "date": "2025/09/24",
             "comment": "面白くて楽しいのね。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/2/2/631822_front.jpg",
+            "title": "ドラゴン スレイヤー",
+            "platform": "PC-88",
+            "date": "2025/09/11",
+            "comment": "---"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/9/2/2/21922_front.jpg",
             "title": "ドラゴン クエスト",
             "platform": "FAMICOM",
-            "start": "2025/09/08",
-            "end": "2025/09/09",
+            "date": "2025/09/09",
             "comment": "すごく楽しい！"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/0/0/5/932005_front.jpg",
             "title": "ファイナルファンタジーII",
             "platform": "STEAM",
-            "start": "2025/08/04",
-            "end": "2025/09/06",
+            "date": "2025/09/06",
             "comment": "悲しい物語ですが、未来への希望が描かれています。"
         },
         {
             "cover": "https://gamefaqs.gamespot.com/a/box/0/0/4/932004_front.jpg",
             "title": "ファイナルファンタジー",
             "platform": "STEAM",
-            "start": "2025/07/27",
-            "end": "2025/08/03",
+            "date": "2025/08/03",
             "comment": "すごく楽しい！"
         },
         {
             "cover": "https://t.vndb.org/cv.t/73/89173.jpg",
             "title": "はなひらっ！",
             "platform": "WIN",
-            "start": "2025/07/04",
-            "end": "2025/07/13",
+            "date": "2025/07/13",
             "comment": "かわいいね"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/4/1/91641_front.jpg",
+            "title": "キングダム ハーツ バース バイ スリープ",
+            "platform": "STEAM",
+            "date": "2025/07/03",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/6/0/4/55604_front.jpg",
+            "title": "キングダム ハーツII",
+            "platform": "STEAM",
+            "date": "2025/06/21",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/0/9/105109_front.jpg",
+            "title": "キングダム ハーツ Re:チェイン オブ メモリーズ",
+            "platform": "STEAM",
+            "date": "2025/06/08",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/3/6/14136_front.jpg",
+            "title": "キングダム ハーツ",
+            "platform": "STEAM",
+            "date": "2025/05/31",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/0/9/52009_front.jpg",
+            "title": "悪魔城ドラキュラX 血の輪廻",
+            "platform": "PC Engine",
+            "date": "2025/05/17",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/8/8/5088_front.jpg",
+            "title": "ロックマン8",
+            "platform": "STEAM",
+            "date": "2025/05/16",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/9/3/673893_front.jpg",
+            "title": "ロックマン11 運命の歯車!!",
+            "platform": "STEAM",
+            "date": "2025/05/15",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/4/4/22144_front.jpg",
+            "title": "ロックマン6",
+            "platform": "STEAM",
+            "date": "2025/05/13",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/4/2/1/49421_front.jpg",
+            "title": "ロックマン5",
+            "platform": "STEAM",
+            "date": "2025/05/12",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/2/9/22129_front.jpg",
+            "title": "ロックマン4",
+            "platform": "STEAM",
+            "date": "2025/05/12",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/1/4/22114_front.jpg",
+            "title": "ロックマン3",
+            "platform": "STEAM",
+            "date": "2025/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/9/5/22095_front.jpg",
+            "title": "ロックマン2",
+            "platform": "STEAM",
+            "date": "2025/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/7/8/22078_front.jpg",
+            "title": "ロックマン",
+            "platform": "STEAM",
+            "date": "2025/05/11",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/8/1/7/70817_front.jpg",
+            "title": "イレギュラーハンターX",
+            "platform": "PSP",
+            "date": "2025/05/07",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/7/8/1/590781_front.jpg",
+            "title": "ロックマンX8",
+            "platform": "STEAM",
+            "date": "2025/05/06",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/5/6/4/18564_front.jpg",
+            "title": "ロックマンX7",
+            "platform": "STEAM",
+            "date": "2025/05/04",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/0/5/5/14055_front.jpg",
+            "title": "ロックマンX6",
+            "platform": "STEAM",
+            "date": "2025/05/03",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/6/6b/Umi_ep6.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode6 Dawn of the golden witch",
+            "platform": "WIN",
+            "date": "2025/04/27",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/5/1/8/10518_front.jpg",
+            "title": "ロックマンX5",
+            "platform": "STEAM",
+            "date": "2025/04/23",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/7/2/7/19727_front.jpg",
+            "title": "ロックマンX",
+            "platform": "STEAM",
+            "date": "2025/04/22",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/d/d1/Uminekoep5l.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode5 End of the golden witch",
+            "platform": "WIN",
+            "date": "2025/04/19",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/f/f8/Umi_ep4.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode4 Alliance of the golden witch",
+            "platform": "WIN",
+            "date": "2025/04/12",
+            "comment": "最高の物語、想像無理のコンセプト。笑ってた、考えてた、怒ってた、泣いてた。一生に覚えている。"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/2/1/20121_front.jpg",
+            "title": "ロックマンX3",
+            "platform": "STEAM",
+            "date": "2025/04/03",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/1/0/9/5109_front.jpg",
+            "title": "ロックマンX4",
+            "platform": "STEAM",
+            "date": "2025/04/01",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/f/f1/Umi_ep3.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode3 Banquet of the golden witch",
+            "platform": "WIN",
+            "date": "2025/03/31",
+            "comment": "---"
+        },
+        {
+            "cover": "https://gamefaqs.gamespot.com/a/box/9/2/2/50922_front.jpg",
+            "title": "ロックマンX2",
+            "platform": "STEAM",
+            "date": "2025/03/26",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/8/8a/Umi_ep2.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode2 Turn of the golden witch",
+            "platform": "WIN",
+            "date": "2025/03/23",
+            "comment": "---"
+        },
+        {
+            "cover": "https://static.wikia.nocookie.net/umineko/images/9/9d/Umineko_no_Naku_Koro_ni_cover.jpg",
+            "title": "うみねこの<span style='color: #FF0000;'>な</span>く頃に Episode1 Legend of the golden witch",
+            "platform": "WIN",
+            "date": "2025/03/16",
+            "comment": "---"
+        },
+        {
+            "cover": "",
+            "title": "Monster Hunter Wilds",
+            "platform": "",
+            "date": "2025/03/03",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Metaphor",
+            "platform": "",
+            "date": "2025/01/18",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Persona 3 Reload EP Aigis",
+            "platform": "",
+            "date": "2024/12/25",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Persona 3 Reload",
+            "platform": "",
+            "date": "2024/12/21",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Persona 5 Royal",
+            "platform": "",
+            "date": "2024/11/16",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Little Goody TWo Shoes",
+            "platform": "",
+            "date": "2024/10/13",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Undertale",
+            "platform": "",
+            "date": "2024/04/14",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Castlevania SOTN",
+            "platform": "",
+            "date": "2023/08/19",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Resident Evil 3 Remake",
+            "platform": "",
+            "date": "2023/05/30",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "DMC 3 Special Edition",
+            "platform": "",
+            "date": "2023/05/17",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "DMC 1",
+            "platform": "",
+            "date": "2023/05/10",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "RE Village",
+            "platform": "",
+            "date": "2023/05/05",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Monster Hunter World",
+            "platform": "",
+            "date": "2023/05/05",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Resident Evil 4 Remake",
+            "platform": "",
+            "date": "2023/04/15",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Clock Tower 3",
+            "platform": "",
+            "date": "2023/04/04",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Resident Evil 4",
+            "platform": "",
+            "date": "2023/02/20",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Resident Evil 2",
+            "platform": "",
+            "date": "2023/02/18",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Metal Gear Rising",
+            "platform": "",
+            "date": "2021/12/26",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Panzer Dragoon",
+            "platform": "",
+            "date": "2021/12/23",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Dark Souls Remastered",
+            "platform": "",
+            "date": "2019/07/01",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "DMC Devil May Cry",
+            "platform": "",
+            "date": "2018/12/17",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Dark Souls II",
+            "platform": "",
+            "date": "2018/01/11",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Dark Souls III",
+            "platform": "",
+            "date": "2017/12/24",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Bloodborne",
+            "platform": "",
+            "date": "2017/11/17",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Resident Evil 7",
+            "platform": "",
+            "date": "2017/02/05",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Stalker Anomaly",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Zelda Breath of the Wild",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "ドラッグ オン ドラグーン",
+            "platform": "PS2",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Nier Automata",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Nier Replicant",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Animal Crossing New Leaf",
+            "platform": "3DS",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Animal Crossing New Horizons",
+            "platform": "SWITCH",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Metal Gear Solid 2",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Metal Gear Solid 3",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Metal Gear Solid Peace Walker",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Project Zomboid",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Europa Universalis 4",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Europa Universalis 5",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Hearts of Iron 4",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Sea of Thieves",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Final Fantasy Type-0",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Mario Kart 7",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Mario Kart 8",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Monster Hunter Portable 2nd G",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Payday",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Payday 2",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "FF14 A Realm Reborn",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "FF14 Heavensward",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "FF14 Stormblood",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "FF14 Shadowbringers",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Persona 4",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Journey",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "A Hat in Time",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Kirby Dream Land",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Kirby Dream Land 2",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Resident Evil 2 Remake",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Civilization 5",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Civilization 6",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Celeste",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Terraria",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Factorio",
+            "platform": "",
+            "date": "",
+            "comment": ""
+        },
+        {
+            "cover": "",
+            "title": "Minecraft",
+            "platform": "",
+            "date": "",
+            "comment": ""
         }
     ]
 }

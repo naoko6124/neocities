@@ -15,31 +15,41 @@
             .then(response => response.json())
             .then(data => {
                 const playingList = document.getElementById("playing-list");
-                const completedList = document.getElementById("completed-list");
+                const playedList = document.getElementById("played-list");
                 const template = document.getElementById("game-entry-template");
 
                 console.log(data);  
                 document.querySelector('#playing').innerHTML += ": " + data.playing.length;
-                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
+                document.querySelector('#played').innerHTML += ": " + data.played.length;
 
                 data.playing.forEach(e => {
+                    if (!e.cover) return;
+                    if (!e.title) return;
+                    if (!e.platform) return;
+                    if (!e.date) return;
+                    if (!e.comment) return;
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
-                    clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
-                    clone.querySelector(".game-date").textContent = `// DATE: ${e.start} → ${e.end}`;
-                    clone.querySelector(".game-comment").textContent = e.comment;
+                    clone.querySelector(".game-link").innerHTML = e.title;
+                    clone.querySelector(".game-platform").innerHTML = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-date").innerHTML = `// DATE: ${e.date}`;
+                    clone.querySelector(".game-comment").innerHTML = e.comment;
                     playingList.appendChild(clone);
                 });
 
-                data.completed.forEach(e => {
+                data.played.forEach(e => {
+                    if (!e.cover) return;
+                    if (!e.title) return;
+                    if (!e.platform) return;
+                    if (!e.date) return;
+                    if (!e.comment) return;
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
-                    clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-platform").textContent = `// PLATFORM: ${e.platform}`;
-                    clone.querySelector(".game-date").textContent = `// DATE: ${e.start} → ${e.end}`;
-                    clone.querySelector(".game-comment").textContent = e.comment;
-                    completedList.appendChild(clone);
+                    clone.querySelector(".game-link").innerHTML = e.title;
+                    clone.querySelector(".game-platform").innerHTML = `// PLATFORM: ${e.platform}`;
+                    clone.querySelector(".game-date").innerHTML = `// DATE: ${e.date}`;
+                    clone.querySelector(".game-comment").innerHTML = e.comment;
+                    playedList.appendChild(clone);
                 });
             });
     </script>
@@ -60,6 +70,7 @@
                 <div class="page-title">
                     <h1>Game Archive // ゲームアーカイブ</h1>
                     <span>プレイ済みとプレイ中ゲームのリスト。</span>
+                    <span>全部記録してない、覚えているものだけ。</span>
                 </div>
 
                 <template id="game-entry-template">
@@ -82,9 +93,9 @@
 
                 <div id="playing-list"></div>
 
-                <p class="end-of-list" id="completed">// COMPLETED</p>
+                <p class="end-of-list" id="played">// PLAYED</p>
 
-                <div id="completed-list"></div>
+                <div id="played-list"></div>
 
                 <p class="end-of-list">// END OF FILE</p>
             </td>
