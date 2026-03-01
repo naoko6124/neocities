@@ -14,23 +14,30 @@
         fetch("./data.json")
             .then(response => response.json())
             .then(data => {
-                const list = document.getElementById("list");
+                const readingList = document.getElementById("reading-list");
+                const completedList = document.getElementById("completed-list");
                 const template = document.getElementById("game-entry-template");
-                
-                const params = new URLSearchParams(window.location.search);
 
-                console.log(params);
-                
-                console.log(params.get('id'));
+                console.log(data);  
+                document.querySelector('#reading').innerHTML += ": " + data.reading.length;
+                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
 
-                data.achievements[parseInt(params.get('id'))].data.forEach(e => {
+                data.reading.forEach(e => {
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
-                    clone.querySelector(".game-img").style.filter = e.completed ? "none" : "grayscale(100%)";
                     clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-tag").textContent = e.tags.map(tag => `// ${tag}`).join(' ');
+                    clone.querySelector(".game-chapters").textContent = `// CHAPTERS: ${e.read}/${e.total == -1 ? "-" : e.total}`;
                     clone.querySelector(".game-comment").textContent = e.comment;
-                    list.appendChild(clone);
+                    readingList.appendChild(clone);
+                });
+
+                data.completed.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-chapters").textContent = `// CHAPTERS: ${e.read}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    completedList.appendChild(clone);
                 });
             });
     </script>
@@ -42,15 +49,15 @@
         <tr>
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
-                    実績
+                    本
                 </div>
             </td>
 
             <td class="main-content">
 
                 <div class="page-title">
-                    <h1>Achievements // 実績</h1>
-                    <span>これまでの実績をまとめた一覧です。<a href="/achievements" class="game-link">戻る</a></span>
+                    <h1>本</h1>
+                    <span>読了済みと読書中の本のリスト。</span>
                 </div>
 
                 <template id="game-entry-template">
@@ -61,16 +68,20 @@
                         <div class="game-details">
                             <h3 class="game-title"><a href="#" class="game-link"></a></h3>
                             <div class="game-meta">
-                                <span class="game-tag">// PLATFORM: 3DS</span>
+                                <span class="game-chapters"></span>
                             </div>
                             <p class="game-comment"></p>
                         </div>
                     </div>
                 </template>
 
-                <div id="list"></div>
+                <p class="end-of-list" id="reading">// 読書中</p>
 
-                <p class="end-of-list">// END OF FILE</p>
+                <div id="reading-list"></div>
+
+                <p class="end-of-list" id="completed">// 読了済み</p>
+
+                <div id="completed-list"></div>
             </td>
         </tr>
     </table>

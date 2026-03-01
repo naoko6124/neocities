@@ -14,30 +14,22 @@
         fetch("./data.json")
             .then(response => response.json())
             .then(data => {
-                const readingList = document.getElementById("reading-list");
-                const completedList = document.getElementById("completed-list");
+                const list = document.getElementById("list");
                 const template = document.getElementById("game-entry-template");
 
-                console.log(data);  
-                document.querySelector('#reading').innerHTML += ": " + data.reading.length;
-                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
+                data.achievements.forEach((e, i) => {
+                    const progress = e.data.filter(e => e.completed === true).length;
+                    const total = e.data.length;
 
-                data.reading.forEach(e => {
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-chapters").textContent = `// CHAPTERS: ${e.read}/${e.total == -1 ? "-" : e.total}`;
-                    clone.querySelector(".game-comment").textContent = e.comment;
-                    readingList.appendChild(clone);
-                });
-
-                data.completed.forEach(e => {
-                    const clone = template.content.cloneNode(true);
-                    clone.querySelector(".game-img").src = e.cover;
-                    clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-chapters").textContent = `// CHAPTERS: ${e.read}/${e.total == -1 ? "-" : e.total}`;
-                    clone.querySelector(".game-comment").textContent = e.comment;
-                    completedList.appendChild(clone);
+                    clone.querySelector(".game-link").href = `/shiriizu/sakuhin.html?id=${i}`;
+                    clone.querySelector(".game-description").textContent = `// ${e.description}`;
+                    clone.querySelector(".game-date").textContent = `// DATE: ${e.date}`;
+                    clone.querySelector(".game-progress-text").textContent = `${progress}/${total}`;
+                    clone.querySelector(".game-progress-fill").style.width = (progress/total*100) + '%';
+                    list.appendChild(clone);
                 });
             });
     </script>
@@ -49,15 +41,15 @@
         <tr>
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
-                    本
+                    シリーズ
                 </div>
             </td>
 
             <td class="main-content">
 
                 <div class="page-title">
-                    <h1>Book Archive // 本アーカイブ</h1>
-                    <span>読了済みと読書中の本のリスト。</span>
+                    <h1>シリーズ</h1>
+                    <span>シリーズの済みです。</span>
                 </div>
 
                 <template id="game-entry-template">
@@ -68,22 +60,18 @@
                         <div class="game-details">
                             <h3 class="game-title"><a href="#" class="game-link"></a></h3>
                             <div class="game-meta">
-                                <span class="game-chapters"></span>
+                                <span class="game-description">// PLATFORM: 3DS</span>
+                                <span class="game-date">// DATE: --/--/--</span>
                             </div>
-                            <p class="game-comment"></p>
+                            <div class="game-progress">
+                                <div class="game-progress-fill" style="width: 70%;"></div>
+                            </div>
+                            <span class="game-progress-text">70%</span>
                         </div>
                     </div>
                 </template>
 
-                <p class="end-of-list" id="reading">// READING</p>
-
-                <div id="reading-list"></div>
-
-                <p class="end-of-list" id="completed">// COMPLETED</p>
-
-                <div id="completed-list"></div>
-
-                <p class="end-of-list">// END OF FILE</p>
+                <div id="list"></div>
             </td>
         </tr>
     </table>

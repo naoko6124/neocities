@@ -1,0 +1,34 @@
+{
+    "watching": [
+        {
+            "cover": "https://cdn.myanimelist.net/images/anime/2/43361l.jpg",
+            "title": "神のみぞ知るセカイ",
+            "current": 3,
+            "total": 12,
+            "comment": "---"
+        },
+        {
+            "cover": "https://cdn.myanimelist.net/images/anime/9/80417.jpg",
+            "title": "ニューゲーム",
+            "current": 3,
+            "total": 12,
+            "comment": "---"
+        },
+        {
+            "cover": "https://image.kddi-video.com/6bf/6bf689eb71ca2db4ed45d07250f82d58/fit-background-transparent/1437635836/750x422.png",
+            "title": "忍風戦隊ハリケンジャー",
+            "current": 9,
+            "total": 51,
+            "comment": "---"
+        },
+        {
+            "cover": "https://i.mydramalist.com/YYgzgP_4c.jpg?v=1",
+            "title": "仮面ライダービルド",
+            "current": 29,
+            "total": 49,
+            "comment": "---"
+        }
+    ],
+    "completed": [
+    ]
+}

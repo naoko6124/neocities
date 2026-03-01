@@ -14,22 +14,30 @@
         fetch("./data.json")
             .then(response => response.json())
             .then(data => {
-                const list = document.getElementById("list");
+                const watchingList = document.getElementById("watching-list");
+                const completedList = document.getElementById("completed-list");
                 const template = document.getElementById("game-entry-template");
 
-                data.achievements.forEach((e, i) => {
-                    const progress = e.data.filter(e => e.completed === true).length;
-                    const total = e.data.length;
+                console.log(data);  
+                document.querySelector('#watching').innerHTML += ": " + data.watching.length;
+                document.querySelector('#completed').innerHTML += ": " + data.completed.length;
 
+                data.watching.forEach(e => {
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-link").href = `/achievements/page.html?id=${i}`;
-                    clone.querySelector(".game-description").textContent = `// ${e.description}`;
-                    clone.querySelector(".game-date").textContent = `// DATE: ${e.date}`;
-                    clone.querySelector(".game-progress-text").textContent = `${progress}/${total}`;
-                    clone.querySelector(".game-progress-fill").style.width = (progress/total*100) + '%';
-                    list.appendChild(clone);
+                    clone.querySelector(".game-episodes").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    watchingList.appendChild(clone);
+                });
+
+                data.completed.forEach(e => {
+                    const clone = template.content.cloneNode(true);
+                    clone.querySelector(".game-img").src = e.cover;
+                    clone.querySelector(".game-link").textContent = e.title;
+                    clone.querySelector(".game-episodes ").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-comment").textContent = e.comment;
+                    completedList.appendChild(clone);
                 });
             });
     </script>
@@ -41,15 +49,15 @@
         <tr>
             <td class="sidebar" id="sidebar">
                 <div class="vertical-header">
-                    実績
+                    テレビ
                 </div>
             </td>
 
             <td class="main-content">
 
                 <div class="page-title">
-                    <h1>Achievements // 実績</h1>
-                    <span>これまでの実績をまとめた一覧です。</span>
+                    <h1>テレビ</h1>
+                    <span>視聴済みと視聴中のリスト。</span>
                 </div>
 
                 <template id="game-entry-template">
@@ -60,20 +68,20 @@
                         <div class="game-details">
                             <h3 class="game-title"><a href="#" class="game-link"></a></h3>
                             <div class="game-meta">
-                                <span class="game-description">// PLATFORM: 3DS</span>
-                                <span class="game-date">// DATE: --/--/--</span>
+                                <span class="game-episodes"></span>
                             </div>
-                            <div class="game-progress">
-                                <div class="game-progress-fill" style="width: 70%;"></div>
-                            </div>
-                            <span class="game-progress-text">70%</span>
+                            <p class="game-comment"></p>
                         </div>
                     </div>
                 </template>
 
-                <div id="list"></div>
+                <p class="end-of-list" id="watching">// 視聴中</p>
 
-                <p class="end-of-list">// END OF FILE</p>
+                <div id="watching-list"></div>
+
+                <p class="end-of-list" id="completed">// 視聴済み</p>
+
+                <div id="completed-list"></div>
             </td>
         </tr>
     </table>

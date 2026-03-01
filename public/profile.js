@@ -3,15 +3,15 @@ fetch('/profile.html')
     .then(data => {
         document.getElementById('sidebar').innerHTML += data;
         
-        fetch('/game/data.json').then(response => response.json()).then(data => {
+        fetch('/geemu/data.json').then(response => response.json()).then(data => {
             document.getElementById('game-count').innerHTML += data.played.length;
         });
 
-        fetch('/anime/data.json').then(response => response.json()).then(data => {
-            document.getElementById('anime-count').innerHTML += data.completed.length;
+        fetch('/terebi/data.json').then(response => response.json()).then(data => {
+            document.getElementById('tv-count').innerHTML += data.completed.length;
         });
 
-        fetch('/book/data.json').then(response => response.json()).then(data => {
+        fetch('/hon/data.json').then(response => response.json()).then(data => {
             document.getElementById('book-count').innerHTML += data.completed.length;
         });
     });
