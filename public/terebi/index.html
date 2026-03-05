@@ -26,7 +26,7 @@
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-episodes").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    clone.querySelector(".game-meta").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
                     clone.querySelector(".game-comment").textContent = e.comment;
                     watchingList.appendChild(clone);
                 });
@@ -35,7 +35,10 @@
                     const clone = template.content.cloneNode(true);
                     clone.querySelector(".game-img").src = e.cover;
                     clone.querySelector(".game-link").textContent = e.title;
-                    clone.querySelector(".game-episodes ").textContent = `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    let meta = "";
+                    meta += `// EPISODES: ${e.current}/${e.total == -1 ? "-" : e.total}`;
+                    if (e.date) meta += ` // DATE: ${e.date}`
+                    clone.querySelector(".game-meta").textContent = meta;
                     clone.querySelector(".game-comment").textContent = e.comment;
                     completedList.appendChild(clone);
                 });
@@ -68,7 +71,6 @@
                         <div class="game-details">
                             <h3 class="game-title"><a href="#" class="game-link"></a></h3>
                             <div class="game-meta">
-                                <span class="game-episodes"></span>
                             </div>
                             <p class="game-comment"></p>
                         </div>
