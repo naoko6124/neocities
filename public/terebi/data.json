@@ -22,14 +22,29 @@
             "comment": "---"
         },
         {
-            "cover": "https://i.mydramalist.com/vZyYq_4c.jpg?v=1",
-            "title": "仮面ライダー龍騎",
-            "current": 3,
+            "cover": "https://i.mydramalist.com/ABeeQP_4c.jpg",
+            "title": "仮面ライダーゼッツ",
+            "current": 26,
             "total": 50,
+            "comment": "---"
+        },
+        {
+            "cover": "https://i.mydramalist.com/JBoWxJ_4c.jpg",
+            "title": "烈車戦隊トッキュウジャー",
+            "current": 1,
+            "total": 47,
             "comment": "---"
         }
     ],
     "completed": [
+        {
+            "cover": "https://i.mydramalist.com/vZyYq_4c.jpg",
+            "title": "仮面ライダー龍騎",
+            "current": 50,
+            "total": 50,
+            "date": "2026/03/20",
+            "comment": "この作品はただのバトルじゃなくて、哲学的なテーマがあって、とても面白いです。特に真司のストーリーが心に残りました。彼は「正しいこと」は何かをずっと探していますが、最後まで答えは見つかりません。でも、自分が信じることを見つけたのはとても良いと思いました。この作品は深くて、考えさせられるので、本当に大好きです。"
+        },
         {
             "cover": "https://i.mydramalist.com/YYgzgP_4c.jpg",
             "title": "仮面ライダービルド",
